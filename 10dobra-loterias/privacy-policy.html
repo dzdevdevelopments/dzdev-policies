@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — 10Dobra Loterias</title>
+  <meta name="description" content="Política de Privacidade do aplicativo 10Dobra Loterias, desenvolvido pela DZDEV.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <article class="page">
+      <header>
+        <p class="brand">DZDEV</p>
+        <h1>Política de Privacidade — 10Dobra Loterias</h1>
+        <p class="meta">
+          <strong>Aplicativo:</strong> 10Dobra Loterias<br>
+          <strong>Package Android:</strong> com.dzdev.dezdobra_loterias<br>
+          <strong>Desenvolvedor:</strong> DZDEV<br>
+          <strong>Vigência / última atualização:</strong> 2 de agosto de 2026
+        </p>
+      </header>
+
+      <h2>1. Escopo</h2>
+      <p>
+        Esta Política de Privacidade descreve como o aplicativo
+        <strong>10Dobra Loterias</strong>, desenvolvido pela <strong>DZDEV</strong>,
+        trata dados no build de lançamento atual. O aplicativo é independente da
+        linha Visão e oferece funcionalidades matemáticas de organização de jogos
+        da Mega-Sena, conta opcional, créditos e, quando disponível, fechamento
+        autorizado por crédito ou por anúncio recompensado.
+      </p>
+      <p>
+        Esta política cobre o aplicativo Android identificado pelo package
+        <strong>com.dzdev.dezdobra_loterias</strong> e os serviços necessários ao
+        seu funcionamento.
+      </p>
+
+      <h2>2. Natureza do aplicativo</h2>
+      <p>
+        O 10Dobra Loterias organiza e avalia combinações com base em critérios
+        matemáticos definidos pelo usuário. Essa funcionalidade
+        <strong>não altera as probabilidades oficiais do sorteio</strong> e
+        <strong>não promete premiação, lucro ou resultado</strong>.
+      </p>
+
+      <h2>3. Conta anônima e conta autenticada</h2>
+      <p>
+        Para funcionalidades gratuitas, a conta é opcional. Ao iniciar o uso da
+        carteira, o aplicativo pode criar uma sessão anônima junto à Wallet API
+        da DZDEV. Essa sessão recebe um identificador técnico (UUID) e tokens de
+        acesso e atualização.
+      </p>
+      <p>
+        O usuário pode vincular a sessão a uma conta Google (“Entrar com Google”)
+        para comprar, manter e recuperar créditos. Nesse caso, um token de
+        identidade do Google é enviado à Wallet API da DZDEV para autenticação e
+        vinculação. A DZDEV não recebe a senha da conta Google.
+      </p>
+      <p>
+        O logout encerra a sessão autenticada no servidor e no dispositivo e
+        estabelece uma nova sessão anônima. Logout não é o mesmo que exclusão
+        definitiva de conta e dados.
+      </p>
+
+      <h2>4. Dados processados</h2>
+      <p>Conforme o uso do aplicativo, podem ser processados:</p>
+      <ul>
+        <li>
+          <strong>Identificador anônimo (UUID)</strong> da carteira, gerado pela
+          Wallet API DZDEV.
+        </li>
+        <li>
+          <strong>Tokens de autenticação</strong> (acesso e atualização),
+          armazenados com segurança no dispositivo.
+        </li>
+        <li>
+          <strong>Estado da conta</strong> (anônima ou autenticada) e o provedor
+          de identidade (Google), quando houver vinculação.
+        </li>
+        <li>
+          <strong>Saldo e operações de créditos</strong>, incluindo identificadores
+          de operação usados para idempotência e prevenção a fraude.
+        </li>
+        <li>
+          <strong>Dados de compra</strong> tratados por Google Play Billing e
+          RevenueCat (o aplicativo não coleta nem armazena dados completos de
+          cartão).
+        </li>
+        <li>
+          <strong>Dados de anúncios e consentimento</strong>, quando o fluxo de
+          anúncio recompensado e o formulário UMP forem apresentados.
+        </li>
+        <li>
+          <strong>Projetos e jogos</strong> salvos localmente no dispositivo.
+        </li>
+        <li>
+          <strong>Conteúdo compartilhado voluntariamente</strong> pelo usuário
+          (por exemplo, texto de jogos).
+        </li>
+        <li>
+          <strong>Dados técnicos</strong> das requisições à Wallet API, como
+          endereço IP e registros operacionais necessários à segurança e ao
+          funcionamento do serviço.
+        </li>
+      </ul>
+      <p>
+        No build atual, o aplicativo
+        <strong>não integra Analytics ou Crashlytics próprios</strong>
+        (por exemplo, Firebase Analytics ou Firebase Crashlytics como produtos
+        de telemetria do app).
+      </p>
+
+      <h2>5. Armazenamento local</h2>
+      <p>
+        No dispositivo, o aplicativo pode armazenar:
+      </p>
+      <ul>
+        <li>
+          sessão da carteira (UUID e tokens) em armazenamento seguro
+          (Flutter Secure Storage), excluído das regras de backup Android
+          configuradas para esses arquivos;
+        </li>
+        <li>
+          projetos, jogos e registros técnicos locais de operações pendentes em
+          SharedPreferences;
+        </li>
+        <li>
+          preferências e estados necessários à continuidade do uso.
+        </li>
+      </ul>
+
+      <h2>6. Carteira, créditos e prevenção a fraude</h2>
+      <p>
+        A DZDEV opera uma Wallet API própria
+        (<code>https://wallet-api.dzdev.com.br</code>) para autenticação, saldo
+        lógico de créditos, consumo e fluxos relacionados a anúncios recompensados.
+        O termo público utilizado no aplicativo é <strong>créditos</strong>.
+      </p>
+      <p>
+        Operações de consumo e autorização usam identificadores únicos para evitar
+        duplicidade e abuso. Endereço IP e logs técnicos podem ser processados
+        para segurança, auditoria operacional e prevenção a fraude.
+      </p>
+      <p>
+        O fechamento da Mega-Sena pode ser autorizado, conforme disponibilidade:
+      </p>
+      <ul>
+        <li>pelo consumo de 1 crédito; ou</li>
+        <li>
+          pela conclusão de um anúncio recompensado, sem consumir ou alterar
+          créditos.
+        </li>
+      </ul>
+
+      <h2>7. Compras, Google Play Billing e RevenueCat</h2>
+      <p>
+        Compras de créditos são processadas pela plataforma de distribuição
+        (Google Play Billing) e pela RevenueCat, integrada ao aplicativo para
+        ofertas, compra e consulta de saldo de moeda virtual. O identificador de
+        usuário da carteira (UUID) é utilizado como App User ID na RevenueCat
+        para manter a correspondência da identidade de compra.
+      </p>
+      <p>
+        A DZDEV <strong>não recebe dados completos de cartão de pagamento</strong>.
+        O processamento do pagamento ocorre pelos provedores da plataforma de
+        distribuição e pelos serviços aplicáveis.
+      </p>
+
+      <h2>8. Anúncios, AdMob e consentimento (UMP)</h2>
+      <p>
+        O aplicativo integra Google Mobile Ads (AdMob) para anúncios recompensados
+        usados em fluxos autorizados (como o fechamento). Também utiliza o
+        User Messaging Platform (UMP) da Google para solicitar e gerenciar
+        consentimento de publicidade quando exigido.
+      </p>
+      <p>
+        Esses SDKs podem processar identificadores de publicidade, dados do
+        dispositivo e sinais técnicos necessários à exibição, medição e
+        conformidade de anúncios, conforme as políticas da Google. Para a
+        verificação server-side de recompensa, o aplicativo envia um dado
+        técnico opaco ao provedor de anúncios, sem incluir o UUID da carteira em
+        texto claro nesse campo.
+      </p>
+
+      <h2>9. Serviços e terceiros</h2>
+      <p>Os principais destinatários e processadores relacionados ao app são:</p>
+      <ul>
+        <li><strong>DZDEV / Wallet API</strong> — autenticação, créditos, operações e segurança;</li>
+        <li><strong>Google Sign-In</strong> — autenticação quando o usuário escolhe vincular a conta;</li>
+        <li><strong>RevenueCat</strong> — compras e saldo de moeda virtual;</li>
+        <li><strong>Google Play Billing</strong> — processamento de pagamentos na loja;</li>
+        <li><strong>Google Mobile Ads / AdMob</strong> — anúncios recompensados;</li>
+        <li><strong>Google UMP</strong> — consentimento de publicidade.</li>
+      </ul>
+      <p>
+        Cada terceiro trata dados conforme suas próprias políticas e termos.
+      </p>
+
+      <h2>10. Compartilhamento iniciado pelo usuário</h2>
+      <p>
+        Quando o usuário escolhe copiar ou compartilhar conteúdo (por exemplo,
+        jogos gerados), o texto é enviado ao destino escolhido por ele
+        (aplicativo ou sistema operacional). Esse compartilhamento é voluntário
+        e ocorre fora do controle contínuo da DZDEV.
+      </p>
+
+      <h2>11. Finalidades do tratamento</h2>
+      <p>Os dados são tratados para:</p>
+      <ul>
+        <li>fornecer as funcionalidades do aplicativo;</li>
+        <li>manter sessão, conta e recuperação de créditos;</li>
+        <li>processar compras e saldo;</li>
+        <li>autorizar fechamentos por crédito ou anúncio;</li>
+        <li>prevenir fraude, abuso e inconsistências operacionais;</li>
+        <li>cumprir obrigações legais e requisitos das plataformas de distribuição;</li>
+        <li>atender solicitações relacionadas à privacidade.</li>
+      </ul>
+
+      <h2>12. Segurança</h2>
+      <p>
+        Tokens de sessão são armazenados em armazenamento seguro do dispositivo.
+        A comunicação com a Wallet API utiliza HTTPS. Credenciais de assinatura
+        do aplicativo e segredos de infraestrutura não são distribuídos no
+        aplicativo ao usuário final. Apesar das medidas adotadas, nenhum sistema
+        é absolutamente isento de riscos.
+      </p>
+
+      <h2>13. Retenção</h2>
+      <p>
+        Dados locais permanecem no dispositivo enquanto o aplicativo e seus
+        armazenamento persistirem, ou até o usuário apagar projetos/conteúdos
+        locais ou desinstalar o app.
+      </p>
+      <p>
+        Dados na Wallet API, logs técnicos, registros de operações e informações
+        necessárias à prevenção a fraude podem ser retidos pelo tempo necessário
+        à operação do serviço, segurança, auditoria e cumprimento de obrigações
+        legais. Dados tratados por Google, RevenueCat e AdMob seguem as políticas
+        desses provedores.
+      </p>
+
+      <h2>14. Exclusão de conta e dados</h2>
+      <p>
+        O aplicativo permite encerrar a sessão autenticada (logout) e continuar
+        com uma sessão anônima. A exclusão definitiva de conta e de dados
+        associados na Wallet API e nos provedores relacionados
+        <strong>não é apresentada como recurso automático concluído nesta
+        versão</strong>.
+      </p>
+      <p>
+        Solicitações relacionadas à privacidade, inclusive pedidos de exclusão,
+        podem ser enviadas ao contato indicado abaixo. A DZDEV avaliará o pedido
+        conforme a viabilidade técnica, obrigações legais e necessidades legítimas
+        de segurança/antifraude.
+      </p>
+
+      <h2>15. Direitos e solicitações</h2>
+      <p>
+        Você pode solicitar informações sobre o tratamento dos seus dados,
+        correções quando aplicável e demais direitos previstos na legislação
+        aplicável, pelo canal de contato desta política. Para exercer direitos
+        relacionados a dados tratados exclusivamente por Google, RevenueCat ou
+        AdMob, também podem ser necessários os canais desses provedores.
+      </p>
+
+      <h2>16. Privacidade de crianças</h2>
+      <p>
+        O 10Dobra Loterias não se destina a crianças. Não solicitamos
+        conscientemente dados pessoais de crianças. Se você acredita que dados
+        de uma criança foram fornecidos indevidamente, entre em contato para
+        avaliação e providências cabíveis.
+      </p>
+
+      <h2>17. Alterações desta política</h2>
+      <p>
+        Esta Política de Privacidade pode ser atualizada para refletir mudanças
+        no aplicativo, na legislação ou nos serviços utilizados. A data de
+        vigência no topo desta página indica a versão publicada.
+      </p>
+
+      <h2>18. Contato</h2>
+      <p>
+        Dúvidas, solicitações ou pedidos relacionados à privacidade do
+        <strong>10Dobra Loterias</strong> podem ser enviados para:
+      </p>
+      <p>
+        <a href="mailto:dzdevdevelopments@gmail.com?subject=Privacidade%20-%2010Dobra%20Loterias">dzdevdevelopments@gmail.com</a>
+      </p>
+      <p>
+        Desenvolvedor responsável: <strong>DZDEV</strong>.
+      </p>
+
+      <p class="note">
+        Documento público hospedado pela DZDEV. Package:
+        com.dzdev.dezdobra_loterias.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
